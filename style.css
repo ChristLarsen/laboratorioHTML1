@@ -8,18 +8,29 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr ;
+    grid-template-columns: repeat(3, 2fr);
     gap: 20px;
 }
 
 .grid-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 
+    "foto"
+    "descripcion precio";
     align-items: center;
     justify-content: space-around;
-    --background-color: #f1f1f1;
-    padding: 20px;
     font-size: 30px;
-    text-align: center;
+}
+
+.grid-item img {
+    border-radius: 10px;
+}
+
+.grid-item-descripcion-precio {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    font-size: 15px;
 }
 
 .texto-main {
@@ -29,9 +40,11 @@
 }
 
 .texto-main-grande {
-    font-weight: 800;
-    font-style: normal;
     font-size: 40px;
+}
+
+.texto-negrita {
+    font-weight: bold;
 }
 
 .footer {
