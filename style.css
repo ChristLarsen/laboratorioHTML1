@@ -6,9 +6,13 @@
     --color-negro : #212429;
 }
 
+main {
+    padding-top: 80px;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -19,7 +23,7 @@
     "descripcion precio";
     align-items: center;
     justify-content: space-around;
-    font-size: 30px;
+    font-size: 14px;
 }
 
 .grid-item img {
@@ -28,9 +32,40 @@
 
 .grid-item-descripcion-precio {
     display: flex;
-    gap: 20px;
+    gap: 64px;
     justify-content: space-around;
-    font-size: 15px;
+}
+
+.estatico {
+    position: static;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: var(--color-blanco);
+}
+
+.barra-navegacion-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 64px;
+}
+
+.separador {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-blanco);
 }
 
 .texto-main {
@@ -54,14 +89,16 @@
     height: 100px;
     background-color: var(--color-negro);
     color: var(--color-blanco);
+    font-size: 16px;
+    border: 32px solid var(--color-blanco);    
 }
 
 .imagen-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding : 20px;
-    gap: 20px;
+    padding : 32px;
+    gap: 16px;
 }
 
 .imagen-footer {
